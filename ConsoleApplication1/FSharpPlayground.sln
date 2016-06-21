@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DEV207", "ConsoleApplication1\DEV207.fsproj", "{7D595F25-5558-4328-87F7-3D460D66D03C}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DEV207_M1", "ConsoleApplication1\DEV207_M1.fsproj", "{7D595F25-5558-4328-87F7-3D460D66D03C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
