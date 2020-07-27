@@ -7,7 +7,7 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DEV207_M1", "DEV207_M1\DEV2
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSExpert.Practice", "FSExpert.Practice\FSExpert.Practice.fsproj", "{BE4F8FE1-2D60-4C06-9444-7C524F1E662C}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "GetProgrammingBook", "GetProgrammingBook\GetProgrammingBook.fsproj", "{04C97325-BF2B-4A05-9600-367531573F44}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "GetProgrammingBook", "GetProgrammingBook\GetProgrammingBook.fsproj", "{BE55F404-429E-4BEB-ACC2-854671A2E75B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{BE4F8FE1-2D60-4C06-9444-7C524F1E662C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE4F8FE1-2D60-4C06-9444-7C524F1E662C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE4F8FE1-2D60-4C06-9444-7C524F1E662C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{04C97325-BF2B-4A05-9600-367531573F44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{04C97325-BF2B-4A05-9600-367531573F44}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{04C97325-BF2B-4A05-9600-367531573F44}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{04C97325-BF2B-4A05-9600-367531573F44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE55F404-429E-4BEB-ACC2-854671A2E75B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE55F404-429E-4BEB-ACC2-854671A2E75B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE55F404-429E-4BEB-ACC2-854671A2E75B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE55F404-429E-4BEB-ACC2-854671A2E75B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
