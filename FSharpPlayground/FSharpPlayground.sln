@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DEV207_M1", "DEV207_M1\DEV207_M1.fsproj", "{81B687EF-259F-4CE0-B863-22AAC202C3D0}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSExpert.Practice", "FSExpert.Practice\FSExpert.Practice.fsproj", "{BE4F8FE1-2D60-4C06-9444-7C524F1E662C}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "GetProgrammingBook", "GetProgrammingBook\GetProgrammingBook.fsproj", "{04C97325-BF2B-4A05-9600-367531573F44}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,8 +23,15 @@ Global
 		{BE4F8FE1-2D60-4C06-9444-7C524F1E662C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE4F8FE1-2D60-4C06-9444-7C524F1E662C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE4F8FE1-2D60-4C06-9444-7C524F1E662C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04C97325-BF2B-4A05-9600-367531573F44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04C97325-BF2B-4A05-9600-367531573F44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04C97325-BF2B-4A05-9600-367531573F44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04C97325-BF2B-4A05-9600-367531573F44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {14F6BFFD-F751-4906-A384-0639592818B8}
 	EndGlobalSection
 EndGlobal
