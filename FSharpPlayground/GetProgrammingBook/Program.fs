@@ -38,11 +38,11 @@ let printGenerateRandomNumber() =
 /// Ch8 Capstone, Car
 ///
 
+let mutable petrol = 100
+
 let getDestination() =
     Console.Write("Enter destination: ")
     Console.ReadLine()
-
-let mutable petrol = 100
 
 let runCapstoneCar() =
     while true do
