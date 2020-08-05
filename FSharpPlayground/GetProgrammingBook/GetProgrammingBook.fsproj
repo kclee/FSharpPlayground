@@ -51,6 +51,8 @@
     <Content Include="packages.config" />
     <Compile Include="Ch8\Car.fs" />
     <None Include="Ch8\CarScratchpad.fsx" />
+    <Compile Include="Ch12\Domain.fs" />
+    <Compile Include="Ch12\Operations.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <ItemGroup>
