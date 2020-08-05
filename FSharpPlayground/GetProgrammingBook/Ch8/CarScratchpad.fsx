@@ -38,3 +38,26 @@ let a = driveTo(100, "Office")
 let b = driveTo(a, "Stadium")
 let c = driveTo(b, "Gas")
 let answer = driveTo(c, "Home")
+
+//
+//
+//let drive(petrol, distance) =
+//    if distance = "far" then petrol / 2.0
+//    elif distance = "medium" then petrol - 10.0
+//    else petrol - 1.0
+
+//let petrol = 100.0
+//let firstState = drive(petrol, "far")
+//let secondState = drive(firstState, "medium")
+//let finalState = drive(secondState, "short")
+
+let drive distance petrol = 
+    if distance = "far" then petrol / 2.0
+    elif distance = "medium" then petrol - 10.0
+    else petrol - 1.0
+
+let startingPetrol = 100.0
+
+let xx = drive "far" startingPetrol |> drive "medium" |> drive "short"
+let xxx = startingPetrol |> drive "far" |> drive "medium" |> drive "short"
+
