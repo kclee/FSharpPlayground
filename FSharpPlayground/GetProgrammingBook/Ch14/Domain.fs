@@ -1,0 +1,1 @@
+namespace Capstone2.Domain

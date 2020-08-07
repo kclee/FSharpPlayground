@@ -61,3 +61,15 @@ let startingPetrol = 100.0
 let xx = drive "far" startingPetrol |> drive "medium" |> drive "short"
 let xxx = startingPetrol |> drive "far" |> drive "medium" |> drive "short"
 
+// Ch 13.
+type Customer = { Age : int }
+
+let printCustomerAge writer customer =
+    let ageType =
+        if customer.Age < 10 then "Child"
+        elif customer.Age < 18 then "Teenager"
+        else "Adult"
+    writer ageType
+
+let printToConsole = printCustomerAge Console.WriteLine
+printToConsole  { Age = 21 }
