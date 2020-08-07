@@ -53,6 +53,40 @@ let runCapstoneCar() =
             printfn "Made it to %s! You have %d petrol left" destination petrol
         with ex -> printfn "ERROR: %s" ex.Message
 
+///
+/// Ch15 // run in F# interactive
+///
+
+type FootballResult =
+    { HomeTeam : string
+      AwayTeam : string
+      HomeGoals : int
+      AwayGoals : int }
+let create (ht, hg) (at, ag) =
+    { HomeTeam = ht; AwayTeam = at; HomeGoals = hg; AwayGoals = ag }
+let results =
+    [ create ("Messiville", 1) ("Ronaldo City", 2)
+      create ("Messiville", 1) ("Bale Town", 3)
+      create ("Bale Town", 3) ("Ronaldo City", 1)
+      create ("Bale Town", 2) ("Messiville", 1)
+      create ("Ronaldo City", 4) ("Messiville", 2)
+      create ("Ronaldo City", 1) ("Bale Town", 2) ]
+
+let teamsWonMostAwayGames = 
+    results 
+    |> List.where (fun x -> (x.HomeGoals < x.AwayGoals)) |> Seq.map (fun x -> x.AwayTeam)  // teams won away game    
+    |> Seq.groupBy (fun team -> team) |> Seq.map (fun x -> fst x, (snd x) |> Seq.length)   // group by team name, so the sum of each group is the win count of each team. (team, #AwayWon).
+    |> Seq.sortByDescending (fun (_, wins) -> wins)
+
+let isAwayWin result = result.AwayGoals > result.HomeGoals
+let teamsWonMostAwayGamesV2 = 
+    results
+    |> List.filter isAwayWin
+    |> List.countBy (fun result -> result.AwayTeam)
+    |> List.sortByDescending (fun (_, awayWins) -> awayWins)
+
+
+
 [<EntryPoint>]
 let main argv =
     // Generate Random Number
