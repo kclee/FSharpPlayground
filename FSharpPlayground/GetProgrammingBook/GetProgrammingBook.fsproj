@@ -53,10 +53,10 @@
     <None Include="Ch8\CarScratchpad.fsx" />
     <Compile Include="Ch12\Domain.fs" />
     <Compile Include="Ch12\Operations.fs" />
-    <None Include="Ch14\Capstone2.fsx" />
     <Compile Include="Ch14\Domain.fs" />
     <Compile Include="Ch14\Auditing.fs" />
     <Compile Include="Ch14\Operations.fs" />
+    <None Include="Ch14\Capstone2.fsx" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <ItemGroup>
