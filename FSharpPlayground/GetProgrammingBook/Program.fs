@@ -85,6 +85,52 @@ let teamsWonMostAwayGamesV2 =
     |> List.countBy (fun result -> result.AwayTeam)
     |> List.sortByDescending (fun (_, awayWins) -> awayWins)
 
+///
+/// Ch18 (fold)// run in F# interactive
+///
+
+let foldSum inputs =
+    Seq.fold
+        (fun state input -> 
+            let newState = state + input
+            printfn "%d %d %d" state input newState
+            newState)
+        0
+        inputs
+
+type Rule = string -> bool * string
+let rules : Rule list =
+    [ fun text -> (text.Split ' ').Length = 3, "Must be three words"
+      fun text -> text.Length <= 30, "Max length is 30 characters"
+      fun text -> text
+                  |> Seq.filter Char.IsLetter
+                  |> Seq.forall Char.IsUpper, "All letters must be caps" ]
+let buildValidator (rules : Rule list) =
+    rules
+    |> List.reduce(fun firstRule secondRule ->
+        fun word ->
+            let passed, error = firstRule word
+            if passed then
+                let passed, error = secondRule word
+                if passed then true, "" else false, error
+            else false, error)  
+
+            
+
+
+///
+type Disk =                               
+| HardDisk of RPM:int * Platters:int      
+| SolidState                              
+| MMC of NumberOfPins:int                 
+
+let myHardDisk = HardDisk(RPM = 250, Platters = 7)       
+let myHardDiskShort = HardDisk(250, 7)                   
+let args = 250, 7
+let myHardDiskTupled = HardDisk args                     
+let myMMC = MMC 5
+let mySsd = SolidState                                   
+
 
 
 [<EntryPoint>]
