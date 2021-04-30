@@ -1,4 +1,5 @@
-﻿namespace Domain
+﻿//namespace Domain
+module Ch12.Domain
 
 type Customer =
     { FirstName : string

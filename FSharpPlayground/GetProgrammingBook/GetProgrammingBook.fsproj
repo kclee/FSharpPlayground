@@ -58,6 +58,7 @@
     <Compile Include="Ch14\Operations.fs" />
     <None Include="Ch14\Capstone2.fsx" />
     <None Include="Lab.fsx" />
+    <Compile Include="ActivePatterns.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
   <ItemGroup>

@@ -1,4 +1,4 @@
-﻿module Operations
+﻿module Ch12.Operations
 
 open Domain
 

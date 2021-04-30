@@ -1,7 +1,10 @@
-﻿open System
+﻿module main.main
+
+open System
 open System.Windows.Forms
 
-open Car
+open Ch8.Car
+open Misc.ActivePatterns
 
 ///
 /// Generate Random Number, and with Memoizing ///
@@ -131,8 +134,6 @@ let myHardDiskTupled = HardDisk args
 let myMMC = MMC 5
 let mySsd = SolidState                                   
 
-
-
 [<EntryPoint>]
 let main argv =
     // Generate Random Number
@@ -141,7 +142,11 @@ let main argv =
     //0
 
     // Ch8
-    runCapstoneCar()
+    //runCapstoneCar()
+    
+    runActivePatternsExample
+    
+
     0
 
     

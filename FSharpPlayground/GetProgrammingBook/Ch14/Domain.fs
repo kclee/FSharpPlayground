@@ -1,4 +1,4 @@
-namespace Capstone2.Capstone2Domain
+module Capstone2.Capstone2Domain
 
 type Customer = 
     { Name : string }
